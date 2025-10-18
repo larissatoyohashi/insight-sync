@@ -1,6 +1,6 @@
-# Página Inicial do InsighSyn
+# Página Inicial do InsighSync
 
-Este projeto consiste em uma página inicial para a equipe **InsighSyn**.
+Este projeto consiste em uma página inicial para a equipe **InsighSync**.
 
 ## Funcionalidades
 
