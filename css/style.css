@@ -12,156 +12,19 @@
     font-style: normal;
 }
 
+
+
+body{
+    font-family: Creato;
+}
+
 a{
-    font-family: Creato;
-}
-
-p{
-    font-family: TTHoves !important;
-}
-
-h2{
-    font-family: Creato;
-}
-
-h1{
-    font-family: Creato;
-}
-
-input{
-    border-color: #FF0075;
-    height: 40px;
-    width: 500px;
-    border-radius:10px ;
-    border-style: double;
-}
-textarea{
-    border-color: #FF0075;
-    height: 40px;
-    width: 500px;
-    border-radius:10px ;
-    border-style: double;
-}
-button{
-    border-color: #FF0075;
-    background-color: #FF0075;
-    color: #EEEEEE;
-    height: 40px;
-    width: 500px;
-    border-radius:10px ;
-    font-family: Creato;
-    font-size: 15px;
-}
-
-form{
-    font-family: Creato;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
-}
-
-
-
-.wrapper {
-    display: flex;
-    flex-direction: column; /* Para empilhar as seções verticalmente */
-    background-color: #EEEEEE;
-    width: 100%;
-  
-    
-}
-
-
-
-.navbar{
-    display: flex;
-    position: relative;
-    z-index: 1;
-    background-color: #FF0075;
-    height: 100px;
-    padding: 20px;
-    width: 100%;
-    margin: auto;
-    position:fixed;    
-    font-family: Creato;
-    font-weight: bold;
-    font-size: 20px;
-    color :#EEEEEE;   
-    justify-content: space-between;
-    font-family: 'Creato Display';
-    src: url('../fonts/CreatoDisplay-Regular.woff2') format('woff2'),
-         url('../fonts/CreatoDisplay-Regular.woff') format('woff'),
-         url('../fonts/CreatoDisplay-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-.navbar ul{
-    gap: 10px;
+    color: #FFFFFF;
 }
 
 .imgnavbar {
-    height: 80%; /* Ajuste conforme necessário */
-    max-height: 80px; /* Limita a altura para evitar distorções */
-}
-
-.imgnavbar:hover {
-    cursor: pointer;
-}
-
-.navbar ul {
-    display: flex;
-    list-style-type: none; /* Remove marcadores */
-    padding: 0; /* Remove padding padrão */
-}
-
-.navbar li {
-    display: flex;
-    align-items: center;
-}
-
-.navbar a {
-    color: #EEEEEE;
-    text-decoration: none;
-    margin-left: 20px; /* Ajuste conforme necessário */
-    transition: color 0.4s;
-}
-
-.navbar a:hover {
-    color: #172774;
-}
-
-.slide {
-    display: flex;
-    justify-content: center; /* Centraliza o conteúdo */
-    background-color: #EEEEEE;
-    margin-top: 100px; /* Espaçamento para a navbar fixa */
-}
-
-.slide img {
-    max-width: 100%; /* Imagem responsiva */
-    height: auto; /* Mantém a proporção */
-}
-
-.product {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: auto;
-    background-color: #172774;
-}
-
-.product p{
-    font-family: 'Creato Display';
-    src: url('../fonts/CreatoDisplay-Regular.woff2') format('woff2'),
-         url('../fonts/CreatoDisplay-Regular.woff') format('woff'),
-         url('../fonts/CreatoDisplay-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+    height: 80%; 
+    max-height: 80px;
 }
 
 .imgsProduct {
@@ -171,40 +34,12 @@ form{
     min-height: 100vh;
 }
 .imgsProduct .iphonePreto {
-    width: 335px;
-    height: 735px;
+    width: 50%;
 }
 
 .imgsProduct .iphoneBranco {
-    width: 339px;
-    height: 711px;
-
+    width: 50%; 
 }
-
-.memoLogoParagProduct {
-    display: flex;
-    flex-direction: column;
-    width: 624px;
-    height: 327px;
-    font-family: Creato;
-    
-    
-}
-
-.memoLogoParagProduct .logoMemo {
-    width: 608px;
-    height: 140px;
-    margin-bottom: 50px;
-    top: -145px;  /* Ajuste esse valor para mover o logo mais para cima */
-    z-index: 0;
-}
-
-.memoLogoParagProduct p {
-    color: #fafafa;
-    margin-bottom: 20px; /* Não mexi aqui, o parágrafo continua com sua margem */
-}
-
-
 
 .logosProduct {
     display: flex;
@@ -221,249 +56,41 @@ form{
     height: 50px;
 }
 
-.team {
-    display: flex;
-    flex-direction: column;
-    background-color: #77d970;
-    padding: 20px;
-    align-items: center;
-    justify-content: flex-start;
-    min-height: 100vh;
+section.sobre-nos{
+    background-color:#FFAF00 ;
 }
 
-.logoTeam {
-    color: #fafafa;
-    width: 319px;
-    height: 79px;
-    background-color: #172774;
-    text-align: center;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    margin-bottom: 20px; /* Espaço entre o logo e os cards abaixo */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5em;
-    margin-top: -20px; /* Move o logo 10px para cima */
-}
+section.sobre-nos img {
+      max-width: 200px; 
+      height: auto;
+    }
 
+ .card-custom {
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      color: #000;
+    }
+    .card-custom img {
+      max-width: 150px;
+      height: auto;
+    }
 
-.card-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 1200px;
-    flex-wrap: wrap;
-}
-
-.card-container .card {
-    width: 210px;
-    margin: 10px;
-    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
-    border-radius: 15px;
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
-    border-left: 1px solid rgba(255, 255, 255, 0.5);
-    overflow: hidden;
-}
-
-/* Oculta as informações inicialmente */
-.card .content {
-    padding: 20px;
-    text-align: center;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.9);
-    box-sizing: border-box;
-    
-}
-
-
-
-
-.card img {
-    width: 100%;
-    height: 100%;
-}
-
-
-
-
-.contact {
-    display: flex;
-    width: 100%;
-    height: auto;
-    min-height: 100vh;
-    background: linear-gradient(to bottom, #FFAF00 50%, #172774 50%);
-}
-
-.folhabranca {
-    position: relative;
-    left: 100px;
-    width: 95%;
-    height: 1648px;
-    
-    background-color: #fafafa;
-    border-radius: 16px;
-    padding: 10px;
-    align-items: center;
-    justify-content: space-between;
-    min-height: 100vh;
-}
-
-.container1 {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    left: 25px;
-    top: 60px;
-    gap: 250px;
-    width: 1200px;
-    height: 550px;
-}
-
-.logoInsyncContact {
-    position: relative;
-    left: 30px;
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    height: 250px;
-}
-
-.infoAbout {
-    position: absolute;
-    right: 0px;
-    left: 350px;
-    width: 1000px;
-    height: 431px;
-    padding-right: 10px;
-}
-
-.infoAbout h2 {
-    text-align: end;
-    font-size: 30px;
-    margin-bottom: 10px;
-}
-.infoAbout p{
-    font-size: 18px;
-    text-align: end;
-    justify-content: end;
-    margin-bottom: 20px;
-}
-
-.infoAbout h2{
-    font-family: 'Creato';
-}
-
-.divRosa {
-    display: flex;
-    position: relative;
-    top: 175px;
-    justify-content: space-around;
-    align-items: center;
-    right: -70px;
-    width:95%;
-    height: 153px;
-    border-top-left-radius: 45px; /* Borda esquerda completamente arredondada */
-  border-bottom-left-radius: 45px; /* Borda esquerda completamente arredondada */
-    background-color: #FF0075;
-    padding: 15px;
-    margin: 20px;
-}
-
-.divRosa::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -35px;            /* Coloca a "meia esfera" na ponta esquerda */
-    width: 153px;            /* Largura da "meia esfera" */
-    height: 153px;           /* Altura da "meia esfera" */
-    background-color: #FF0075; /* Mesma cor da régua */
-    border-radius: 50%;     /* Faz a forma ficar circular */
-  }
-
-.divfilhoRosa1 {
-    position: relative;
-    text-align: center;
-    width: 200px;
-    font-size: 20px;
-    width: 356px;
-    height: 78px;
-}
-
-.divfilhoRosa2 {
-    position: relative;
-    text-align: center;
-    font-size: 20px;
-    width: 356px;
-    height: 78px;
-    
-}
-
-.divfilhoRosa3 {
-    position: relative;
-
-    text-align: center;
-    font-size: 20px;
-    width: 356px;
-    height: 78px;
-    
-}
-.contForm {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 210px;
-    left: 100px;
-    width: 1700px;
-    height: 550px;
-}
-
-.formular{
-    width: 655px;
-    height: 400px;
-}
-
-.greenSquare{
-    width: 1000px;
-    height: 534px;
-    border-radius: 15px;
+.equipebg{
     background-color: #77d970;
 }
 
-.footer {
-    background-color: #FF0075;
-    height: 200px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: Creato;
-    left:10px;
-    right: 10px;
-}
-
-.footerEsquerdo {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    padding-left: 10px;
-}
-
-.footerEsquerdo ul {
-    list-style: none;
-    color: #EEEEEE;
-}
-
-.footerEsquerdo img {
-width: 165px;
-height: 189px;
-top: 5021px;
-left: 66px;    
-}
-
-.footerDireito p{
-    color: #EEEEEE;
-    padding-right:10px;
-    
-}
+  .bg-pink {
+      background-color: #FF0075 !important;
+    }
+    .footer-logo {
+      max-height: 50px; /* ajuste conforme sua logo */
+    }
+    footer a {
+      color: #333;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
