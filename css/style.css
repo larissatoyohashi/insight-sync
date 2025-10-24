@@ -13,13 +13,56 @@
 }
 
 
-
 body{
-    font-family: Creato;
+    font-family: Creato, sans-serif;
+}
+
+[id] {
+    scroll-margin-top: 80px;
+}
+
+.imgsProduct img {
+    width: auto;
+    height: auto;
+    max-height: 500px;
+}
+
+.imgnavbar {
+    height: 50px;
 }
 
 a{
     color: #FFFFFF;
+    text-decoration: none;
+}
+
+nav {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #FF0075 !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    transition: all 0.3, ease;
+}
+
+nav.scrolled {
+    padding: 5px 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.navbar a {
+    color: #fff;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #ffd1dc;
+    transform: scale(1.05);
 }
 
 .imgnavbar {
@@ -94,3 +137,4 @@ section.sobre-nos img {
     footer a:hover {
       text-decoration: underline;
     }
+
